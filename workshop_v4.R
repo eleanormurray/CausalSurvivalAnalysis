@@ -6,14 +6,11 @@
 ###########################################################################
 
 # Code Section 0 - Data Setup ---------------------------------------
-rm(list=ls())
-# Set working directory to location of data
-setwd('C:/Users/lucia/Dropbox/workshop_materials/')
-#setwd('/Users/lucia/hsphDropbox/Dropbox/SMDM.shortcourse/SimulatedData/')
 
 # Load the following packages. If they do not exist on your computer,
 # this code will automatically install them into your default library. 
-
+# To set working directory
+if(!require(here)) { install.packages("here"); require(here)}
 # To use restricted cubic splines
 if(!require(rms)) { install.packages("rms"); require(rms)}
 # To run Cox PH models
@@ -33,7 +30,7 @@ if(!require(reshape2)) { install.packages("reshape2"); require(reshape2)}
 # Code Section 1 - Data Exploration ---------------------------------------
 
 # Load the data from the trial
-trial <- read.csv('trial1.csv', header=TRUE)
+trial <- read.csv(here("trial1.csv"), header=TRUE)
 
 # Print the names of the available variables
 names(trial)
