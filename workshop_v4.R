@@ -11,6 +11,7 @@
 # this code will automatically install them into your default library. 
 # To set working directory
 if(!require(here)) { install.packages("here"); require(here)}
+set_here()
 # To use restricted cubic splines
 if(!require(rms)) { install.packages("rms"); require(rms)}
 # To run Cox PH models
