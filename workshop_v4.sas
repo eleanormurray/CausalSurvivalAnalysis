@@ -10,7 +10,7 @@
 /********************************************/
 
 /* Set working directory to your location*/
-libname surv "C:\Users\Ellie\Dropbox\Conferences.Talks\2018\Kolokotrones\NovWorkshop\workshop_materials";
+libname surv "<yourpathhere>\workshop_materials";
 
 
 /*********************************************************************************************************/
