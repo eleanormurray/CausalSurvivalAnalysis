@@ -1,6 +1,6 @@
 # Causal Survival Analysis
 
-This repository contains the materials for the Causal Survival Analysis presented at the Kolokotrones Symposium at Harvard TH Chan School of Public Health on November 2, 2018, and developed by Ellie Caniglia, Ellie Murray, and Lucia Petito. 
+This repository contains the materials for the Causal Survival Analysis in Follow-up Studies workshop presented at the Kolokotrones Symposium at Harvard TH Chan School of Public Health on November 2, 2018, and developed by Ellie Caniglia, Ellie Murray, and Lucia Petito. 
 
 This workshop is designed to provide an overview to causal inference for survival outcomes with point exposures or time-varying exposures for which static interventions, which are known at baseline, are of interest using inverse probability weighting. A static intervention is one where the exposure should take the same value at every time point (e.g. continuous treatment versus no treatment). 
 
