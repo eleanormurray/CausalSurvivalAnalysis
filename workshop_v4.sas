@@ -5,12 +5,20 @@
 * Purpose: Commented code to go along with survival workshop
 ************************************************************/
 
-/**********************************************/
-/* Code Section 0 - Data Setup*/ 
-/********************************************/
+/************************************************/
+/* Code Section 0 - Data Setup                  */ 
+/* Assign a library to the location of your data*/
+/************************************************/
 
-/* Set working directory to your location*/
-libname surv "<yourpathhere>\workshop_materials";
+/*On windows, set user to USERPROFILE; on Unix, set user to HOME*/
+%let user = %sysget(USERPROFILE);
+/*Set dlgcdir to the location of your extracted file
+/*If you unzipped the github repository in your download folder, you don't need to change anything*/
+%let rc = %sysfunc(dlgcdir("&user./Downloads/CausalSurvivalAnalysis-master"));
+libname surv "./";
+
+/* Or, set working directory to your location manually by uncommenting the code below */
+/*libname surv "<yourpathhere>\CausalSurvivalAnalysis-master";*/
 
 
 /*********************************************************************************************************/
